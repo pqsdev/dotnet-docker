@@ -1,5 +1,6 @@
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
-# install System.Drawing native dependencies
+
+# install System.Drawing + NTLM native dependencies
 RUN apt-get update \
   && apt-get install -y --allow-unauthenticated \
   libc6-dev \
