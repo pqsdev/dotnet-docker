@@ -39,3 +39,4 @@ jobs:
 
       - name: Print image url
         run: echo "Image pushed to ${{ steps.push-to-quay.outputs.registry-paths }}"
+      - uses: gautamkrishnar/keepalive-workflow@v1 # using the workflow with default settings
